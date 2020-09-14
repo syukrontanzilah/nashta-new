@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400&display=swap" );
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+}
+
+.no-underline {
+  text-decoration: none !important
+}
+
+input::placeholder {
+  font-size: 0.9rem;
+}
+
+input[type=date] {
+  font-size: 0.9rem;
+  
+}
+
+.profile-pict {
+  border-radius: 100%;
+  max-width: 22px;
+}
+
+
+.error-input {
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
+.error-text {
+  margin: 0.25em 0 0 0;
+  padding: 0;
+  color: red;
+  font-style: bold;
+  font-size: 0.8rem;
+}
+
+.mainBG {background: url(http://lorempixel.com/1920/1920/city/9/) no-repeat center center fixed; background-size: cover;}
+.mainBG-txt.jumbotron { 
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+  background-color: transparent;}
+.mainBG-txt.jumbotron h1 {
+  color: #fff;
+  font-size: 40px;}
+.mainBG-txt.jumbotron h1 span {
+  font-weight: 400;}
+.mainBG-txt.jumbotron h1 strong {
+  font-weight: 700;}
+.jum-bg {
+  background-color: darkcyan;
+  padding: 15px 0; color: wheat;}
+.jumbotron .jum-bg p {margin-bottom: 15px; margin-top: 15px; padding: 0 10px; font-size: 16px;}

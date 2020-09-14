@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "fca25d64-7bf2-43fe-b5e0-661c357f26f5",
+		"name": "be_test_nashta",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "limit",
+							"value": "4",
+							"disabled": true
+						},
+						{
+							"key": "search",
+							"value": "all",
+							"disabled": true
+						}
+					]
+				},
+				"description": "get list all\noptional :\n- search\n- page\n- limit"
+			},
+			"response": []
+		},
+		{
+			"name": "add data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "meet all team",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "bandung",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "20-08-2020",
+							"type": "text"
+						},
+						{
+							"key": "participant",
+							"value": "all",
+							"type": "text"
+						},
+						{
+							"key": "note",
+							"value": "team",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"value": "/images/IMG_20200413_071149.jpg",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL}}/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						""
+					]
+				},
+				"description": "add data "
+			},
+			"response": []
+		},
+		{
+			"name": "upload file",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/send-file",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"send-file"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete data",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/1593073507947",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"1593073507947"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update data",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "meet all bro",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "jakarta pusat",
+							"type": "text"
+						},
+						{
+							"key": "date",
+							"value": "20-08-2020",
+							"type": "text"
+						},
+						{
+							"key": "participant",
+							"value": "all",
+							"type": "text"
+						},
+						{
+							"key": "note",
+							"value": "team",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/1593074539334",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"1593074539334"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
